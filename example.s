@@ -10,7 +10,7 @@ MOV RDI, 0x01;
 MOV RSI, "Begin\n"; // Mix escaped string literal
 MOV RDX, 6;
 
-int 0x80; // Syscall
+int 0x80; // Syscall sys_write or _write by matching lookup table
 register rtn= EAX;
 
 if (rtn) jmp main; // goto and gosub are optional, use assembly
