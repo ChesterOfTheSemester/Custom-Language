@@ -18,7 +18,7 @@ else ret;
 
 // Main function/label is optional
 // Commandline are still parsed into main parameters
-main(int argc, char **argb) 
+main(int argc, char **argv) 
 {
   printf("End\n");
   MOV RAX, 0; // Automatically enable 64-bit
